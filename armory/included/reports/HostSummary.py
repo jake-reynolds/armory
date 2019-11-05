@@ -48,6 +48,7 @@ class Report(ReportTemplate):
         gowitness_databases = []
 
         ffuf_data = {}
+	print("TESTTEST")
 
         if args.include_ffuf:
             path = os.path.join(self.base_config["PROJECT"]["base_path"],'output', 'FFuF')
@@ -142,6 +143,7 @@ class Report(ReportTemplate):
         data_path = os.path.join(os.path.dirname(args.output_html), 'data')
         static_path = os.path.join(os.path.dirname(args.output_html), 'static')
         static_source = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static')
+	print(static_source)
         # data_path = os.path.dirname(args.output_html)
         if data_path and not os.path.isdir(data_path):
             os.mkdir(data_path)
