@@ -48,7 +48,6 @@ class Report(ReportTemplate):
         gowitness_databases = []
 
         ffuf_data = {}
-	print("TESTTEST")
 
         if args.include_ffuf:
             path = os.path.join(self.base_config["PROJECT"]["base_path"],'output', 'FFuF')
